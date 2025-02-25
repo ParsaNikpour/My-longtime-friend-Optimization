@@ -1,6 +1,27 @@
 # My Longtime Friend Optimization
 This repository is dedicated to optimization from simple linear programming to advanced recent methods across literature.
 
+**McCormick Envelope**
+We use this reformulation whenever we are dealing with a bilinear term (like x.y). Introduce a new variable z and replace every x*y with it. And then, add these four constraints:
+
+For the lower bound, we have:
+
+<p align="center">$z \geq x^L y + y^L x - x^L y^L$<p>
+
+<p align="center">$z \geq x^U y + y^U x - x^U y^U$<p>
+
+For the upper bound, we have:
+
+<p align="center">$z \leq x^U y + y^L x - x^U y^L$<p>
+
+<p align="center">$z \leq x^L y + y^U x - x^L y^U$<p>
+
+In this repository, I implemented this reformulation on a Pooling Problem.
+
+To learn more about McCormick Envelope, take a look at [1] https://www.linkedin.com/pulse/mccormick-envelope-pooling-problem-parsa-nikpour-husnf/?trackingId=zBCtTMIDFC96mdrl%2BMtJxA%3D%3D and [2] https://optimization.cbe.cornell.edu/index.php?title=McCormick_envelopes.
+
+
+  
 **Generalized Disjunctive Programming** 
 
 Disjunctive programming was first proposed by Balas in 1979 [1]. Then this method was generalized by Raman and Grossmann in 1994 [2] and is called "Generalized Disjunctive Programming (GDP)". In GDP, the constraints are in the form of propositional logic. This form of programming is widely used in chemical engineering, sequence and job-shop problems, and maintenance. Take a look at the following model taken from https://pyomo.readthedocs.io/en/6.8.0/modeling_extensions/gdp/concepts.html
