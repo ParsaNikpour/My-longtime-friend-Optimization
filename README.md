@@ -18,7 +18,7 @@ For the upper bound, we have:
 
 In this repository, I implemented this reformulation on a Pooling Problem.
 
-To learn more about McCormick Envelope, take a look at [1] https://www.linkedin.com/pulse/mccormick-envelope-pooling-problem-parsa-nikpour-husnf/?trackingId=zBCtTMIDFC96mdrl%2BMtJxA%3D%3D and [2] https://optimization.cbe.cornell.edu/index.php?title=McCormick_envelopes.
+To learn more about McCormick Envelope, take a look at (1) https://www.linkedin.com/pulse/mccormick-envelope-pooling-problem-parsa-nikpour-husnf/?trackingId=zBCtTMIDFC96mdrl%2BMtJxA%3D%3D and (2) https://optimization.cbe.cornell.edu/index.php?title=McCormick_envelopes.
 
 
   
